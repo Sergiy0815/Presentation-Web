@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000; 
+    color: #fff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #888;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.nav-btn {
+    background: #fff;
+    color: #000 !important;
+    padding: 10px 24px;
+    border-radius: 100px;
+}
+
+.hero-section {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.hero-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hero-left {
+    max-width: 60%;
+}
+
+.badge {
+    background: #1a1a1a;
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.title span {
+    color: #444;
+}
+
+.hero-right {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+.description {
+    color: #888;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 32px;
+}
+
+.stat-item span {
+    color: #555;
+    font-size: 14px;
+    text-transform: uppercase;
+}
