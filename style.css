@@ -1,3 +1,9 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    width: 100%;
+}
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +48,7 @@ body {
 }
 
 .hero-section {
-    height: calc(100vh - 100px);
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 80px;
@@ -108,4 +114,101 @@ body {
     color: #555;
     font-size: 14px;
     text-transform: uppercase;
+}
+.experience-section {
+    min-height: 100vh;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 65px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    letter-spacing: -2px;
+}
+
+.section-title span {
+    color: #444;
+}
+
+.experience-list {
+    display:flex;
+    gap:30px;
+    width: 100%;
+}
+
+.experience-card {
+    flex:1;
+    background: #111;
+    pad: 30px;
+    border-radius: 20px;
+    border: 1px solid #222;
+    transition: 0.3 ease;
+}
+
+.experience-card.active {
+    background: #1a1a1a;
+    border-color: #333;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.experience-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.view-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 20px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .title, .section-title {
+        font-size: 48px;
+        letter-spacing: -1px;
+    }
+    .experience-section {
+      padding: 60px 20px;
+    }
+    .card-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .hero-content,
+    .hero-container,
+    .experience-list {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .hero-left,
+    .hero-right,
+    .experience-card {
+        max-width: 100%;
+        width: 100%;
+    }
 }
