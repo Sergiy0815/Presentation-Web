@@ -143,10 +143,10 @@ body {
 .experience-card {
     flex:1;
     background: #111;
-    pad: 30px;
+    padding: 30px;
     border-radius: 20px;
     border: 1px solid #222;
-    transition: 0.3 ease;
+    transition: 1s ease;
 }
 
 .experience-card.active {
@@ -210,5 +210,70 @@ body {
     .experience-card {
         max-width: 100%;
         width: 100%;
+    }
+}
+
+.skills-section {
+    min-height: 100vh;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.skills-left {
+    flex: 1;
+}
+
+.skills-grid {
+    flex: 1.5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 20px;
+}
+
+.skill-item {
+    background: #111;
+    border: 1px solid #222;
+    padding: 25px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.skill-item:hover {
+    border-color: #fff;
+    background: #1a1a1a;
+    transform: translateY(-5px);  
+}
+
+ 
+
+@media (max-width: 1024px) {
+    .skills-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr; 
+    }
+    
+    .skills-section {
+        padding: 60px 20px;
     }
 }
